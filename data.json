@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "texto": "Leite",
+    "concluido": true
+  },
+  {
+    "id": 2,
+    "texto": "Arroz",
+    "concluido": false
+  },
+  {
+    "id": 3,
+    "texto": "Feijão",
+    "concluido": false
+  },
+  {
+    "id": 4,
+    "texto": "Pão",
+    "concluido": true
+  },
+  {
+    "id": 5,
+    "texto": "Ovos",
+    "concluido": false
+  },
+  {
+    "id": 6,
+    "texto": "Café",
+    "concluido": true
+  },
+  {
+    "id": 7,
+    "texto": "Açúcar",
+    "concluido": false
+  },
+  {
+    "id": 8,
+    "texto": "Macarrão",
+    "concluido": true
+  },
+  {
+    "id": 9,
+    "texto": "Sabonete",
+    "concluido": false
+  },
+  {
+    "id": 10,
+    "texto": "Detergente",
+    "concluido": false
+  }
+]

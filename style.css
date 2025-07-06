@@ -70,6 +70,11 @@ h6 {
   accent-color: #4a4e69;
 }
 
+.tarefa.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
 .tarefa p {
   flex: 1;
   cursor: pointer;
