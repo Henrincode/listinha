@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 300ms;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
   min-height: 100vh;
 
-  padding-top: 40px;
+  padding: 40px 0;
 
   color: white;
   font-family: "Poppins";
@@ -24,12 +25,12 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 
   max-width: 350px;
   width: 100%;
 
-  padding: 20px;
+  padding: 15px 20px;
 
   border: solid 2px #9a8c98;
   border-radius: 10px;
@@ -58,7 +59,10 @@ h6 {
   flex-direction: row;
   gap: 10px;
 
+  margin: 5px 0;
   padding: 10px;
+  padding-right: 0;
+
   border: solid 2px #f2e9e4;
   border-radius: 10px;
 
@@ -79,4 +83,23 @@ h6 {
   flex: 1;
   cursor: pointer;
   font-size: 16px;
+}
+
+main .texto-concluidas {
+  margin: 20px 40px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #9a8c98;
+
+  color: #c9ada7;
+  text-align: center;
+}
+
+.sumindo {
+  transform: scale(0);
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
 }
