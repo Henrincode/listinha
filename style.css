@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
 
   padding: 40px 0;
+  padding-bottom: 120px;
 
   color: white;
   font-family: "Poppins";
@@ -23,7 +24,29 @@ body {
   background: #22223b;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+#fazer {
   display: flex;
   flex-direction: column;
   /* gap: 10px; */
@@ -39,28 +62,12 @@ main {
   background: #4a4e69;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
 .tarefa {
   display: flex;
   flex-direction: row;
   gap: 10px;
 
-  margin: 5px 0;
+  margin: 2px 0;
   padding: 10px;
   /* padding-right: 0; */
 
@@ -98,7 +105,7 @@ h6 {
   display: block;
 }
 
-main .texto-concluidas {
+.texto-concluidas {
   margin: 20px 40px;
   margin-bottom: 10px;
   border-bottom: 2px solid #9a8c98;
@@ -106,6 +113,62 @@ main .texto-concluidas {
   color: #c9ada7;
   text-align: center;
 }
+
+.nenhuma-tarefa {
+  font-size: 20px;
+  text-align: center;
+}
+
+#adicionar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: solid 2px #9a8c98;
+  border-radius: 10px;
+
+  background-color: #4a4e69;
+}
+
+#adicionar input {
+  flex: 1;
+  width: 100%;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#adicionar button {
+  cursor: pointer;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  color: #252525;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+
+  transition: color 100ms, background 300ms;
+}
+
+#adicionar button:hover {
+  color: white;
+  background-color: #9a8c98;
+}
+
+/* EFEITOS */
 
 .sumindo {
   transform: scale(0);
@@ -115,4 +178,10 @@ main .texto-concluidas {
   border: 0;
   opacity: 0;
   overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .tarefa i {
+    display: block;
+  }
 }
