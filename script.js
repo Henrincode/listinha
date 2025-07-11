@@ -5,11 +5,13 @@ const novaTarefaInput = document.querySelector('#adicionar input')
 const novaTarefaBotao = document.querySelector('#adicionar button')
 
 novaTarefaBotao.addEventListener('click', e => {
-    if (novaTarefaInput.value) novaTarefa()
+    const texto = novaTarefaInput.value.trim().replace(/\s+/g, ' ')
+    if (texto) novaTarefa(texto)
 })
 
 novaTarefaInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter' && novaTarefaInput.value) novaTarefa()
+    const texto = novaTarefaInput.value.trim().replace(/\s+/g, ' ')
+    if (e.key === 'Enter' && texto) novaTarefa(texto)
 })
 
 listarTarefas()
@@ -59,10 +61,10 @@ function listarTarefas() {
     }
 }
 
-function novaTarefa() {
+function novaTarefa(texto) {
     tarefasBanco.push({
-        id: Number(tarefasBanco.length + 1),
-        texto: novaTarefaInput.value,
+        id: gerarId(),
+        texto: texto,
         concluido: false
     })
     novaTarefaInput.value = ''
@@ -108,6 +110,11 @@ function acaoLixeira() {
             }, 300)
         })
     })
+}
+
+function gerarId() {
+    if (tarefasBanco.length === 0) return 1
+    return Math.max(...tarefasBanco.map(tarefa => tarefa.id)) + 1
 }
 
 // function addTarefa() { }

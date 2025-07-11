@@ -65,6 +65,7 @@ h6 {
 .tarefa {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
 
   margin: 2px 0;
@@ -158,13 +159,13 @@ h6 {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: bold;
-  background-color: white;
+  background-color: #c9ada7;
 
   transition: color 100ms, background 300ms;
 }
 
 #adicionar button:hover {
-  color: white;
+  color: #fff;
   background-color: #9a8c98;
 }
 
